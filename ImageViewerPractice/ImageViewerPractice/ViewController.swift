@@ -8,10 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let image = UIImage(named: "babyhusky.png")
+        imageView = UIImageView(image:image)
+        imageView.frame = CGRect(origin: CGPoint(x: 0, y: 0), size:image!.size)
+        scrollView.addSubview(imageView)
+        scrollView.contentSize = image!.size
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
