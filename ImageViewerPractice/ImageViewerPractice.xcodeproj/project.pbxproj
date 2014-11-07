@@ -13,6 +13,7 @@
 		E46287D81A095E4A00A3C8C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46287D71A095E4A00A3C8C8 /* Images.xcassets */; };
 		E46287DB1A095E4A00A3C8C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46287D91A095E4A00A3C8C8 /* LaunchScreen.xib */; };
 		E46287E71A095E4A00A3C8C8 /* ImageViewerPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46287E61A095E4A00A3C8C8 /* ImageViewerPracticeTests.swift */; };
+		E462886F1A0C760000A3C8C8 /* babyhusky.png in Resources */ = {isa = PBXBuildFile; fileRef = E462886E1A0C75FF00A3C8C8 /* babyhusky.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E46287E01A095E4A00A3C8C8 /* ImageViewerPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageViewerPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46287E51A095E4A00A3C8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E46287E61A095E4A00A3C8C8 /* ImageViewerPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerPracticeTests.swift; sourceTree = "<group>"; };
+		E462886E1A0C75FF00A3C8C8 /* babyhusky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = babyhusky.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		E46287CD1A095E4A00A3C8C8 /* ImageViewerPractice */ = {
 			isa = PBXGroup;
 			children = (
+				E462886E1A0C75FF00A3C8C8 /* babyhusky.png */,
 				E46287D01A095E4A00A3C8C8 /* AppDelegate.swift */,
 				E46287D21A095E4A00A3C8C8 /* ViewController.swift */,
 				E46287D41A095E4A00A3C8C8 /* Main.storyboard */,
@@ -194,6 +197,7 @@
 			files = (
 				E46287D61A095E4A00A3C8C8 /* Main.storyboard in Resources */,
 				E46287DB1A095E4A00A3C8C8 /* LaunchScreen.xib in Resources */,
+				E462886F1A0C760000A3C8C8 /* babyhusky.png in Resources */,
 				E46287D81A095E4A00A3C8C8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +411,7 @@
 				E46287EC1A095E4A00A3C8C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E46287ED1A095E4A00A3C8C8 /* Build configuration list for PBXNativeTarget "ImageViewerPracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				E46287EF1A095E4A00A3C8C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

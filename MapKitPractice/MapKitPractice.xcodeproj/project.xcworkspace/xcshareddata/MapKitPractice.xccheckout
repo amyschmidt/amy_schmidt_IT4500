@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F338B249-BA3B-4E76-AC86-A323A1337164</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MapKitPractice</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7369E7C2DC1DD40ECA14A2905CBED09B9DBEF3CC</key>
+		<string>https://github.com/amyschmidt/amy_schmidt_IT4500.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MapKitPractice/MapKitPractice.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7369E7C2DC1DD40ECA14A2905CBED09B9DBEF3CC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/amyschmidt/amy_schmidt_IT4500.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7369E7C2DC1DD40ECA14A2905CBED09B9DBEF3CC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7369E7C2DC1DD40ECA14A2905CBED09B9DBEF3CC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>amy_schmidt_IT4500</string>
+		</dict>
+	</array>
+</dict>
+</plist>
