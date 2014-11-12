@@ -1,4 +1,5 @@
-amy_schmidt_public_repo
-=======================
+README.md
+=================
+Collaborative Mobile App Development Homework Assignments and iOS Swift Practice 
 
-IT 4500 HW 1
+Amy Schmidt, 2014. 
