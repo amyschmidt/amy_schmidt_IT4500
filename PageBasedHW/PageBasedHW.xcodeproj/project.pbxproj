@@ -423,6 +423,7 @@
 				E46288621A0BFF1100A3C8C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E46288631A0BFF1100A3C8C8 /* Build configuration list for PBXNativeTarget "PageBasedHWTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				E46288651A0BFF1100A3C8C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
