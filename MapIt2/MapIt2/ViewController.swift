@@ -22,24 +22,28 @@ class ViewController: UIViewController {
         //getMapData returns mapData from appDelegate
         let mapData = appDelegate.getMapData()
         
-        var homeLatitude: CLLocationDegrees = 38.950910
-        var homeLongitude: CLLocationDegrees = -92.326801
         
         var span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta:mapData.latDelta, longitudeDelta:mapData.lonDelta)
-        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(mapData.latitude, mapData.longitude)
-        var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+        var centerLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(mapData.latitude, mapData.longitude)
+        var region:MKCoordinateRegion = MKCoordinateRegionMake(centerLocation, span)
         
         mapView.setRegion(region, animated:true)
         
-        var myHome:CLLocationCoordinate2D = CLLocationCoordinate2DMake(homeLatitude, homeLongitude)
+        for (var i = 0; i < mapData.longitudeArray.count; i++) {
+            
+            //coordinates[i] = CLLocationCoordinate2DMake(mapData.latitudeArray[i], mapData.longitudeArray[i])
+            
+            var annotation = MapAnnotation()
+            
+            annotation.latitude = mapData.latitudeArray[i]
+            annotation.longitude = mapData.longitudeArray[i]
+            annotation.title = mapData.titleArray[i]
+            annotation.subtitle = mapData.subtitleArray[i]
+            
+            self.mapView.addAnnotation(annotation)
+
+        }
         
-        var mapAnnotation = MKPointAnnotation()
-        mapAnnotation.coordinate = myHome
-        mapAnnotation.title = "Home"
-        mapAnnotation.subtitle = "Amy's Apartment"
-        
-        self.mapView.addAnnotation(mapAnnotation)
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

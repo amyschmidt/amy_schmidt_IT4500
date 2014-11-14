@@ -15,6 +15,7 @@
 		E49A412F1A12902C00CABD4F /* MapIt2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A412E1A12902C00CABD4F /* MapIt2Tests.swift */; };
 		E49A41391A12906500CABD4F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49A41381A12906500CABD4F /* MapKit.framework */; };
 		E49A413B1A12931C00CABD4F /* MapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A413A1A12931C00CABD4F /* MapData.swift */; };
+		E4AA4BA11A15C9F7006B6218 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AA4BA01A15C9F7006B6218 /* MapAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E49A412E1A12902C00CABD4F /* MapIt2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapIt2Tests.swift; sourceTree = "<group>"; };
 		E49A41381A12906500CABD4F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E49A413A1A12931C00CABD4F /* MapData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapData.swift; path = ../MapData.swift; sourceTree = "<group>"; };
+		E4AA4BA01A15C9F7006B6218 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				E49A41181A12902C00CABD4F /* AppDelegate.swift */,
 				E49A413A1A12931C00CABD4F /* MapData.swift */,
 				E49A411A1A12902C00CABD4F /* ViewController.swift */,
+				E4AA4BA01A15C9F7006B6218 /* MapAnnotation.swift */,
 				E49A411C1A12902C00CABD4F /* Main.storyboard */,
 				E49A411F1A12902C00CABD4F /* Images.xcassets */,
 				E49A41211A12902C00CABD4F /* LaunchScreen.xib */,
@@ -222,6 +225,7 @@
 				E49A411B1A12902C00CABD4F /* ViewController.swift in Sources */,
 				E49A413B1A12931C00CABD4F /* MapData.swift in Sources */,
 				E49A41191A12902C00CABD4F /* AppDelegate.swift in Sources */,
+				E4AA4BA11A15C9F7006B6218 /* MapAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +419,7 @@
 				E49A41341A12902C00CABD4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E49A41351A12902C00CABD4F /* Build configuration list for PBXNativeTarget "MapIt2Tests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				E49A41371A12902C00CABD4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
