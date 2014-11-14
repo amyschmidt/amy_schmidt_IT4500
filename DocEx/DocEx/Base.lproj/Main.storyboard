@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Docs View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DocsViewController" customModule="DocEx" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4M-jU-ZhD">
+                                <rect key="frame" x="16" y="556" width="568" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="eb2-UV-684">
+                                        <connections>
+                                            <segue destination="Mne-kC-7dT" kind="show" identifier="editor" id="phr-mw-mGx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aRT-d2-PEg"/>
+                                    <barButtonItem systemItem="search" id="YyO-AT-lHr"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPs-ei-Mfj">
+                                <rect key="frame" x="279" y="290" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="tPs-ei-Mfj" secondAttribute="centerY" id="Bv7-eQ-ps9"/>
+                            <constraint firstAttribute="centerX" secondItem="tPs-ei-Mfj" secondAttribute="centerX" id="Sjg-Ez-l5W"/>
+                            <constraint firstItem="n4M-jU-ZhD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wqJ-Ai-sBh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n4M-jU-ZhD" secondAttribute="trailing" id="xBg-Oq-PPW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n4M-jU-ZhD" secondAttribute="bottom" id="yd9-ky-1uZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="status" destination="tPs-ei-Mfj" id="05N-ry-J4j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Editor View Controller-->
+        <scene sceneID="afb-am-oSU">
+            <objects>
+                <viewController id="Mne-kC-7dT" customClass="EditorViewController" customModule="DocEx" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s6G-F4-OiQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Vc-Ny-Dzf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pty-1Y-Z6Q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ab9-By-D7N">
+                                <rect key="frame" x="16" y="20" width="568" height="44"/>
+                                <items>
+                                    <navigationItem title="Edit" id="Fj0-aW-SHN">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="save" id="Xkm-lY-a70">
+                                            <connections>
+                                                <action selector="save:" destination="Mne-kC-7dT" id="6Zq-6K-3oy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="h36-xr-Rgy">
+                                            <connections>
+                                                <action selector="cancel:" destination="Mne-kC-7dT" id="EQw-JP-ElA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ab9-By-D7N" firstAttribute="leading" secondItem="pty-1Y-Z6Q" secondAttribute="leadingMargin" id="C6V-0C-IJa"/>
+                            <constraint firstItem="Ab9-By-D7N" firstAttribute="top" secondItem="s6G-F4-OiQ" secondAttribute="bottom" id="Mi3-Ky-1jY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ab9-By-D7N" secondAttribute="trailing" id="eSy-JE-C4c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="docs" id="inH-2z-wib"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8d-w7-n43" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837" y="136"/>
+        </scene>
+    </scenes>
+</document>
